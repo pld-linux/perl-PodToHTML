@@ -3,7 +3,7 @@ Summary:	PodToHTML perl module
 Summary(pl):	Modu³ perla PodToHTML
 Name:		perl-PodToHTML
 Version:	0.04
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -15,6 +15,7 @@ BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-Stream
 BuildRequires:	perl-URI
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
