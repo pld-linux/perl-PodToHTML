@@ -1,10 +1,15 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	PodToHTML perl module
 Summary(pl):	Modu³ perla PodToHTML
 Name:		perl-PodToHTML
 Version:	0.04
 Release:	9
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/PodToHTML-%{version}.tar.gz
 # Source0-md5:	b08e3351b171b719f40031a188fe5c26
@@ -31,10 +36,13 @@ PodToHTML - konwertuje pliki POD do formatu HTML lub PostScript.
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
