@@ -30,7 +30,7 @@ PodToHTML - konwertuje pliki POD do formatu HTML lub PostScript.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
