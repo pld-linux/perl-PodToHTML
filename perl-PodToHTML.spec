@@ -6,14 +6,13 @@
 Summary:	PodToHTML Perl module - converts POD to HTML or PostScript
 Summary(pl):	Modu³ Perla PodToHTML - konwersja plików POD do formatu HTML lub PostScript
 Name:		perl-PodToHTML
-Version:	0.04
-Release:	12
+Version:	0.05
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/PodToHTML-%{version}.tar.gz
-# Source0-md5:	b08e3351b171b719f40031a188fe5c26
-Patch0:		%{name}-fix.patch
+# Source0-md5:	0a6a4d1887e6b95df0232b002940a5c3
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-HTML-Tree
@@ -32,7 +31,6 @@ PostScript.
 
 %prep
 %setup -q -n PodToHTML-%{version}
-%patch0 -p1
 %{__perl} -pi -e 's/^(use\s+Pod::Parser\s+1.06)1/$1_1/' Pod/HTML_Elements.pm
 
 %build
