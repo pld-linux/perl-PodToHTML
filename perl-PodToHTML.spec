@@ -3,7 +3,7 @@ Summary:	PodToHTML perl module
 Summary(pl):	Modu³ perla PodToHTML
 Name:		perl-PodToHTML
 Version:	0.04
-Release:	8
+Release:	9
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/PodToHTML-%{version}.tar.gz
