@@ -14,7 +14,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/PodToHTML-%{version}.tar.gz
 # Source0-md5:	b08e3351b171b719f40031a188fe5c26
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-Stream
