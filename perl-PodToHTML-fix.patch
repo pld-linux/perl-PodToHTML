@@ -1,0 +1,10 @@
+--- PodToHTML-0.04/Pod/HTML_Elements.pm~	2004-06-02 19:32:25.000000000 +0000
++++ PodToHTML-0.04/Pod/HTML_Elements.pm	2004-06-02 19:32:25.000000000 +0000
+@@ -9,6 +9,7 @@
+ $VERSION = '0.04';
+ use base qw(Pod::Parser);  
+ use Data::Dumper;     
++use IO::File;
+ 
+ my $nbsp;              
+ 
