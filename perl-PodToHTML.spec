@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	PodToHTML Perl module - converts POD to HTML or PostScript
-Summary(pl):	Modu≥ Perla PodToHTML - konwersja plikÛw POD do formatu HTML lub PostScript
+Summary(pl.UTF-8):   Modu≈Ç Perla PodToHTML - konwersja plik√≥w POD do formatu HTML lub PostScript
 Name:		perl-PodToHTML
 Version:	0.05
 Release:	2
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PodToHTML Perl module converts POD to HTML or PostScript.
 
-%description -l pl
-Modu≥ Perla PodToHTML konwertuje pliki POD do formatu HTML lub
+%description -l pl.UTF-8
+Modu≈Ç Perla PodToHTML konwertuje pliki POD do formatu HTML lub
 PostScript.
 
 %prep
