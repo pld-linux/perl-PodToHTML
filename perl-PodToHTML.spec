@@ -1,7 +1,8 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
+
+%define		pdir	PodToHTML
 %include	/usr/lib/rpm/macros.perl
 Summary:	PodToHTML Perl module - converts POD to HTML or PostScript
 Summary(pl.UTF-8):	Moduł Perla PodToHTML - konwersja plików POD do formatu HTML lub PostScript
@@ -13,12 +14,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Pod/PodToHTML-%{version}.tar.gz
 # Source0-md5:	fec09c1e062ed4c670b6b982649e2f24
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	perl-HTML-Tree
+URL:		http://search.cpan.org/dist/PodToHTML/
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-HTML-Stream
+BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Pod-Parser
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
